@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technuclear.lifecall.fragments.HomeFragment"
+    android:background="@drawable/background_main">
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:scaleType="fitStart"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        card_view:srcCompat="@drawable/user_icon"
+        android:id="@+id/imageView7"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <ImageView
+        android:layout_below="@id/imageView7"
+        android:onClick="getHelp"
+        android:src="@drawable/help_initiate"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        card_view:srcCompat="@drawable/assign_task_unactive"
+        android:id="@+id/fragment_home_emer_no"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        card_view:srcCompat="@drawable/assign_task_active"
+        android:id="@+id/fragment_home_emer_yes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/fragment_home_emer_no"
+        android:layout_alignEnd="@+id/fragment_home_emer_no" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        card_view:srcCompat="@drawable/user1"
+        android:id="@+id/fragment_home_trouble_no"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        card_view:srcCompat="@drawable/user_red"
+        android:id="@+id/fragment_home_trouble_yes"
+        android:layout_alignTop="@+id/fragment_home_trouble_no"
+        android:layout_alignLeft="@+id/fragment_home_trouble_no"
+        android:layout_alignStart="@+id/fragment_home_trouble_no" />
+
+</RelativeLayout>

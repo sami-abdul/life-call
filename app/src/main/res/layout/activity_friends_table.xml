@@ -1,0 +1,197 @@
+<ScrollView
+    android:background="@drawable/background_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:textColor="#ffff"
+        android:text="@string/select_blood_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:textColor="#ffff"
+        android:text="Have Any Diseases?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView9" />
+
+    <RadioGroup
+        android:id="@+id/radio_group2"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp">
+        <RadioButton
+            android:textColor="#ffff"
+            android:textColorHighlight="@color/colorPrimary"
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3" />
+
+        <RadioButton
+            android:textColor="#ffff"
+            android:textColorHighlight="@color/colorPrimary"
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:id="@+id/radioButton4" />
+    </RadioGroup>
+
+    <EditText
+        android:theme="@style/EditTextTheme"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_diseases"
+        android:ems="10"
+        android:id="@+id/editText9"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/radio_group2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:theme="@style/EditTextTheme"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_name"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:theme="@style/EditTextTheme"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:hint="@string/enter_phone_number"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/editText5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:theme="@style/EditTextTheme"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/enter_age"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:theme="@style/EditTextTheme"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/enter_weight"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Delete"
+        android:onClick="onDelete"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/activity_friends_delete_btn"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Spinner
+        android:background="@color/colorPrimary"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/spinner2"
+        android:entries="@array/blood_groups"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <Button
+        android:text="@string/confirm"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:id="@+id/button10"
+        android:onClick="onConfirm"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/editText9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/activity_frienfs_progress"/>
+</RelativeLayout>
+
+    </ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+
+    <TextView
+
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_centerHorizontal="true"
+        android:text="The Story Of Life Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+
+
+        <TextView
+
+            android:textSize="20sp"
+            android:layout_marginTop="70dp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Started off as a sudden idea in the mind of our one of the team mates was quickly acknowledged by the rest of the team. Aim to save precious lives anywhere in the world was turned into reality by working restlessly no matter day or night. Thus, Life call (beta) came into reality.\n\n
+As the name suggest this is the call of life saving someone life is only a button away
+Just press a button and that’s it help will be on the way , we all know that how our loved ones will try to save our life in case of accident hence introducing ‘ Save Me’ feature your location will be shared to specific contacts that you will choose during setting up the application .
+\n\n
+Every year thousands of people die because they didn’t receive blood on time .
+Hence introducing ‘blood call’ just tap a button and all your chosen contacts will be requested to get ready in case of blood needed.
+\n\n
+This all came into reality by three students of university of Karachi that belonged to department of computer science.
+\n\n
+Development team :
+\n
+Taha haq
+\n
+Abdul Sami
+\
+Maaz Jawaid
+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!-- everything you already have -->
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
